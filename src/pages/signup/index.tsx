@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Signup extends React.Component {
     render() {
@@ -17,9 +18,9 @@ class Signup extends React.Component {
                         <div className="sign">
                             <div className="sign__content">
                                 <form action="#" className="sign__form">
-                                    <a href="/" className="sign__logo">
+                                    <Link to="/">
                                         <img src="img/logo.svg" alt=""/>
-                                    </a>
+                                    </Link>
 
                                     <div className="sign__group">
                                         <input type="text" className="sign__input" placeholder="Name"/>
@@ -35,8 +36,9 @@ class Signup extends React.Component {
 
                                     <div className="sign__group sign__group--checkbox">
                                         <input id="remember" name="remember" type="checkbox" defaultChecked/>
-                                        <label htmlFor="remember">I agree to the <a href="/privacy">Privacy
-                                            Policy</a></label>
+                                        <label htmlFor="remember">I agree to the
+                                            <Link to="/privacy">Privacy
+                                            Policy</Link></label>
                                     </div>
 
                                     <button className="sign__btn" type="button">Sign up</button>
@@ -65,7 +67,8 @@ class Signup extends React.Component {
                                         </a>
                                     </div>
 
-                                    <span className="sign__text">Already have an account? <a href="/signin">Sign in!</a></span>
+                                    <span className="sign__text">Already have an account?
+                                        <Link to="/signin">Sign in!</Link></span>
                                 </form>
                             </div>
                         </div>

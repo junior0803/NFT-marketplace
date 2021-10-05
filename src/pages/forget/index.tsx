@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Forgetpassword extends React.Component {
     render() {
@@ -7,7 +8,8 @@ class Forgetpassword extends React.Component {
                 <div className="row row--grid">
                     <div className="col-12">
                         <ul className="breadcrumb">
-                            <li className="breadcrumb__item"><a href="index.html">Home</a></li>
+                            <li className="breadcrumb__item">
+                                <Link to="/">Home</Link></li>
                             <li className="breadcrumb__item breadcrumb__item--active">Restore password</li>
                         </ul>
                     </div>
@@ -16,9 +18,9 @@ class Forgetpassword extends React.Component {
                         <div className="sign">
                             <div className="sign__content">
                                 <form action="#" className="sign__form">
-                                    <a href="index.html" className="sign__logo">
+                                    <Link to="/" className="sign__logo">
                                         <img src="img/logo.svg" alt=""/>
-                                    </a>
+                                    </Link>
 
                                     <div className="sign__group">
                                         <input type="text" className="sign__input" placeholder="Email"/>
@@ -26,8 +28,9 @@ class Forgetpassword extends React.Component {
 
                                     <div className="sign__group sign__group--checkbox">
                                         <input id="remember" name="remember" type="checkbox" defaultChecked/>
-                                        <label htmlFor="remember">I agree to the <a href="privacy.html">Privacy
-                                            Policy</a></label>
+                                        <label htmlFor="remember">I agree to the &nbsp;
+                                            <Link to="/privacy">Privacy
+                                            Policy</Link></label>
                                     </div>
 
                                     <button className="sign__btn" type="button">Send</button>

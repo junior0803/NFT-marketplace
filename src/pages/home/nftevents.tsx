@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Nftevents extends React.Component {
     render() {
@@ -11,8 +12,9 @@ class Nftevents extends React.Component {
                             <p className="home__text">Financial Instruments-Payment System <br/>Licenses,
                                 permits &amp; Authorizations</p>
                             <div className="home__btns">
-                                <a href="explore.html" className="home__btn home__btn--clr">Explore</a>
-                                <a href="/signin" className="home__btn">Sign in</a>
+                                <Link to="/explorer"><div className="home__btn home__btn--clr">Explore</div></Link>
+                                &nbsp;&nbsp;&nbsp;
+                                <Link to="/Signin"><div className="home__btn home__btn--clr">Sign in</div></Link>
                             </div>
                         </div>
                     </div>

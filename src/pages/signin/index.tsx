@@ -1,6 +1,38 @@
-import React from 'react';
+import * as React from 'react';
+import {useState} from 'react';
+import { Link } from 'react-router-dom';
+import Api from '../../helper/api';
 
-class Signin extends React.Component {
+interface Props {
+    email: string;
+    password: string;
+}
+
+class Signinpage extends React.Component<Props>{
+    state = {
+        email:'',
+        password:''
+    };
+    onEmailChange = (e: React.FormEvent<HTMLInputElement>): void => {
+        this.setState({ email: e.currentTarget.value });
+    };
+    onPasswordChange = (e: React.FormEvent<HTMLInputElement>): void => {
+        this.setState({ password: e.currentTarget.value });
+    };
+    singIn = () =>{
+        if(!this.state.email){
+            alert('Please Input email correclty');
+            return;
+        }
+        if(!this.state.password){
+            alert('Please Input password correclty');
+            return;
+        }
+        Api.signIn({data: {email: this.state.email, password: this.state.password}}).then(res => {
+            console.log(res)
+        })
+
+    }
     render() {
         return (
             <div className="container" style={{marginBottom: 70, marginTop: 70}}>
@@ -17,24 +49,24 @@ class Signin extends React.Component {
                             <div className="sign__content">
 
                                 <form action="#" className="sign__form">
-                                    <a href="/" className="sign__logo">
+                                    <Link to="/">
                                         <img src="img/logo.svg" alt=""/>
-                                    </a>
+                                    </Link>
 
                                     <div className="sign__group">
-                                        <input type="text" className="sign__input" placeholder="Email"/>
+                                        <input type="text" className="sign__input" value={this.props.email} onChange={this.onEmailChange} placeholder="Email" />
                                     </div>
 
                                     <div className="sign__group">
-                                        <input type="password" className="sign__input" placeholder="Password"/>
+                                        <input type="password" className="sign__input" value={this.props.password} onChange={this.onPasswordChange} placeholder="Password"/>
                                     </div>
 
                                     <div className="sign__group sign__group--checkbox">
-                                        <input id="remember" name="remember" type="checkbox" defaultChecked/>
+                                        <input id="remember" name="remember" type="checkbox" defaultChecked />
                                         <label htmlFor="remember">Remember Me</label>
                                     </div>
 
-                                    <button className="sign__btn" type="button">Sign in</button>
+                                    <button className="sign__btn" type="button" onClick={this.singIn}>Sign in</button>
 
                                     <span className="sign__delimiter">or</span>
 
@@ -60,10 +92,11 @@ class Signin extends React.Component {
                                         </a>
                                     </div>
 
-                                    <span className="sign__text">Don't have an account? <a
-                                        href="/signup">Sign up!</a></span>
+                                    <span className="sign__text">Don't have an account?
+                                        <Link to="/signup">Sign up!</Link></span>
 
-                                    <span className="sign__text"><a href="/forget">Forgot password?</a></span>
+                                    <span className="sign__text">
+                                        <Link to="/forget">Forgot password?</Link></span>
                                 </form>
                             </div>
                         </div>
@@ -74,4 +107,4 @@ class Signin extends React.Component {
     }
 }
 
-export default Signin;
+export default Signinpage;

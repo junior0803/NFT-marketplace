@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 function Privacy() {
     return (
@@ -7,7 +8,9 @@ function Privacy() {
 
                 <div className="col-12">
                     <ul className="breadcrumb">
-                        <li className="breadcrumb__item"><a href="index.html">Home</a></li>
+                        <li className="breadcrumb__item">
+                            <Link to="/">Home</Link>
+                        </li>
                         <li className="breadcrumb__item breadcrumb__item--active">Privacy policy</li>
                     </ul>
                 </div>

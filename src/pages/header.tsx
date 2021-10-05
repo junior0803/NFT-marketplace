@@ -1,14 +1,17 @@
-import React from 'react';
+import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
+    onMenuItem = (e: React.MouseEvent<HTMLAnchorElement>): void => {
+        e.currentTarget.setAttribute("class", "header__nav-link header__nav-link--active");
+        // e.currentTarget.href = "/activity"
+    };
     render() {
         return (
             <header className="header">
                 <div className="header__content">
                     <div className="header__logo">
-                        <a href="/">
-                            <img src="img/logo.svg" alt=""/>
-                        </a>
+                        <Link to="/"><img src="img/logo.svg" alt=""/></Link>
                     </div>
 
                     <form action="#" className="header__search">
@@ -29,19 +32,51 @@ class Header extends React.Component {
 
                     <div className="header__menu">
                         <ul className="header__nav">
+
                             <li className="header__nav-item">
-                                <a href="/" className="header__nav-link">Home</a>
+                                <Link to="/activity"><div id={"activity"} className="header__nav-link" >Activity</div></Link>
                             </li>
                             <li className="header__nav-item">
-                                <a href="/explorer" className="header__nav-link">Explorer</a>
+                                <a className="header__nav-link" href="#" role="button" id="dropdownMenu0"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path>
+                                </svg></a>
+
+                                <ul className="dropdown-menu header__nav-menu" aria-labelledby="dropdownMenu0">
+                                    <li><a href="/token">Unitok</a></li>
+                                    <li><Link to="/blog">News</Link>
+                                    </li>
+                                    <li><a href="faq.html">Help center</a></li>
+                                    <li>
+                                        <Link to="/contacts">Contacts</Link>
+                                    </li>
+                                </ul>
                             </li>
                             <li className="header__nav-item">
-                                <a href="blog.html" className="header__nav-link">News</a>
+                                <a className="header__nav-link" href="#" role="button" id="dropdownMenu1"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path>
+                                </svg></a>
+
+                                <ul className="dropdown-menu header__nav-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="/authors">Authors</a></li>
+                                    <li><a href="/author">Author</a></li>
+                                    <li>
+                                        <Link to="/collection">Collection</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/create">Create</Link>
+                                    </li>
+                                </ul>
                             </li>
                             <li className="header__nav-item">
                                 <a className="header__nav-link header__nav-link--menu" href="#" role="button"
-                                   id="dropdownMenu2"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path
                                             d="M12,10a2,2,0,1,0,2,2A2,2,0,0,0,12,10ZM5,10a2,2,0,1,0,2,2A2,2,0,0,0,5,10Zm14,0a2,2,0,1,0,2,2A2,2,0,0,0,19,10Z"></path>
@@ -49,11 +84,21 @@ class Header extends React.Component {
                                 </a>
 
                                 <ul className="dropdown-menu header__nav-menu" aria-labelledby="dropdownMenu2">
-                                    <li><a href="/Signin">Sign in</a></li>
-                                    <li><a href="/Signup">Sign up</a></li>
-                                    <li><a href="/forget">Forgot password</a></li>
-                                    <li><a href="/Error">404 Page</a></li>
-                                    <li><a href="/privacy">Privacy policy</a></li>
+                                    <li>
+                                        <Link to="/Signin">Sign in</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/Signup">Sign up</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/forget">Forgot password</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/Error">404 Page</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/privacy">Privacy policy</Link>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -83,31 +128,31 @@ class Header extends React.Component {
                             </a>
 
                             <ul className="dropdown-menu header__profile-menu" aria-labelledby="dropdownMenuProfile">
-                                <li><a href="author.html">
+                                <li><a href="/author">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path
                                             d="M15.71,12.71a6,6,0,1,0-7.42,0,10,10,0,0,0-6.22,8.18,1,1,0,0,0,2,.22,8,8,0,0,1,15.9,0,1,1,0,0,0,1,.89h.11a1,1,0,0,0,.88-1.1A10,10,0,0,0,15.71,12.71ZM12,12a4,4,0,1,1,4-4A4,4,0,0,1,12,12Z"></path>
                                     </svg>
                                     <span>Profile</span></a></li>
-                                <li><a href="author.html">
+                                <li><a href="/author">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path
                                             d="M3.71,16.29a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21,1,1,0,0,0-.21.33,1,1,0,0,0,.21,1.09,1.15,1.15,0,0,0,.33.21.94.94,0,0,0,.76,0,1.15,1.15,0,0,0,.33-.21,1,1,0,0,0,.21-1.09A1,1,0,0,0,3.71,16.29ZM7,8H21a1,1,0,0,0,0-2H7A1,1,0,0,0,7,8ZM3.71,11.29a1,1,0,0,0-1.09-.21,1.15,1.15,0,0,0-.33.21,1,1,0,0,0-.21.33.94.94,0,0,0,0,.76,1.15,1.15,0,0,0,.21.33,1.15,1.15,0,0,0,.33.21.94.94,0,0,0,.76,0,1.15,1.15,0,0,0,.33-.21,1.15,1.15,0,0,0,.21-.33.94.94,0,0,0,0-.76A1,1,0,0,0,3.71,11.29ZM21,11H7a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2ZM3.71,6.29a1,1,0,0,0-.33-.21,1,1,0,0,0-1.09.21,1.15,1.15,0,0,0-.21.33.94.94,0,0,0,0,.76,1.15,1.15,0,0,0,.21.33,1.15,1.15,0,0,0,.33.21,1,1,0,0,0,1.09-.21,1.15,1.15,0,0,0,.21-.33.94.94,0,0,0,0-.76A1.15,1.15,0,0,0,3.71,6.29ZM21,16H7a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"></path>
                                     </svg>
                                     <span>Activity</span></a></li>
-                                <li><a href="create.html">
+                                <li><a href="/create">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path
                                             d="M10,13H4a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V14A1,1,0,0,0,10,13ZM9,19H5V15H9ZM20,3H14a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V4A1,1,0,0,0,20,3ZM19,9H15V5h4Zm1,7H18V14a1,1,0,0,0-2,0v2H14a1,1,0,0,0,0,2h2v2a1,1,0,0,0,2,0V18h2a1,1,0,0,0,0-2ZM10,3H4A1,1,0,0,0,3,4v6a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V4A1,1,0,0,0,10,3ZM9,9H5V5H9Z"></path>
                                     </svg>
                                     <span>Add Asset</span></a></li>
-                                <li><a href="author.html">
+                                <li><a href="/author">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path
                                             d="M19.9,12.66a1,1,0,0,1,0-1.32L21.18,9.9a1,1,0,0,0,.12-1.17l-2-3.46a1,1,0,0,0-1.07-.48l-1.88.38a1,1,0,0,1-1.15-.66l-.61-1.83A1,1,0,0,0,13.64,2h-4a1,1,0,0,0-1,.68L8.08,4.51a1,1,0,0,1-1.15.66L5,4.79A1,1,0,0,0,4,5.27L2,8.73A1,1,0,0,0,2.1,9.9l1.27,1.44a1,1,0,0,1,0,1.32L2.1,14.1A1,1,0,0,0,2,15.27l2,3.46a1,1,0,0,0,1.07.48l1.88-.38a1,1,0,0,1,1.15.66l.61,1.83a1,1,0,0,0,1,.68h4a1,1,0,0,0,.95-.68l.61-1.83a1,1,0,0,1,1.15-.66l1.88.38a1,1,0,0,0,1.07-.48l2-3.46a1,1,0,0,0-.12-1.17ZM18.41,14l.8.9-1.28,2.22-1.18-.24a3,3,0,0,0-3.45,2L12.92,20H10.36L10,18.86a3,3,0,0,0-3.45-2l-1.18.24L4.07,14.89l.8-.9a3,3,0,0,0,0-4l-.8-.9L5.35,6.89l1.18.24a3,3,0,0,0,3.45-2L10.36,4h2.56l.38,1.14a3,3,0,0,0,3.45,2l1.18-.24,1.28,2.22-.8.9A3,3,0,0,0,18.41,14ZM11.64,8a4,4,0,1,0,4,4A4,4,0,0,0,11.64,8Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,11.64,14Z"></path>
                                     </svg>
                                     <span>Settings</span></a></li>
-                                <li><a href="#">
+                                <li><a href="/">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path
                                             d="M4,12a1,1,0,0,0,1,1h7.59l-2.3,2.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l4-4a1,1,0,0,0,.21-.33,1,1,0,0,0,0-.76,1,1,0,0,0-.21-.33l-4-4a1,1,0,1,0-1.42,1.42L12.59,11H5A1,1,0,0,0,4,12ZM17,2H7A3,3,0,0,0,4,5V8A1,1,0,0,0,6,8V5A1,1,0,0,1,7,4H17a1,1,0,0,1,1,1V19a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V16a1,1,0,0,0-2,0v3a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V5A3,3,0,0,0,17,2Z"></path>
@@ -118,9 +163,9 @@ class Header extends React.Component {
                     </div>
 
                     <button className="header__btn" type="button">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span/>
+                        <span/>
+                        <span/>
                     </button>
                 </div>
             </header>

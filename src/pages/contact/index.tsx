@@ -1,6 +1,11 @@
 import React from 'react';
+import { RouteComponentProps } from 'react-router'
 
-class Contactspage extends React.Component {
+class Contactspage extends React.Component<RouteComponentProps<{paramA:string}>> {
+    state = {
+        params: this.props.match.params.paramA
+    };
+
     render() {
         return (
             <div className="container" style={{marginBottom: 70, marginTop: 70}}>
@@ -38,7 +43,7 @@ class Contactspage extends React.Component {
                                 <div className="col-12">
                                     <div className="sign__group">
                                         <input type="text" name="subject" className="sign__input"
-                                               placeholder="Subject"/>
+                                          value={this.state.params}     placeholder="Subject"/>
                                     </div>
                                 </div>
 
