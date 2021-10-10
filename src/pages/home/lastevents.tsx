@@ -21,14 +21,14 @@ class Lastevents extends React.Component {
                 <div className="col-12">
                     <div className="main__carousel-wrap">
                         <div className="main__carousel main__carousel--live owl-carousel owl-loaded" id="live">
-                            <div className="owl-stage-outer owl-height" style={{height: 527.562}}>
+                            <div className="owl-stage-outer owl-height">
                                 <div className="owl-stage" style={{
                                     transform: 'translate3d(-3325px, 0px, 0px)',
                                     transition: 'all 0.6s ease 0s',
                                     width: 4988
                                 }}>
-                                    <div className="owl-item cloned" style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item cloned">
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <Link to ="/item" className="card__cover">
                                                 <img src="img/cover/cover5.jpg" alt=""/>
                                                 <span className="card__time">15 minutes left</span>
@@ -57,8 +57,8 @@ class Lastevents extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="owl-item cloned" style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item cloned">
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <Link to ="/item" className="card__cover card__cover--video">
                                                 <img src="img/cover/cover6.jpg" alt=""/>
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -90,8 +90,8 @@ class Lastevents extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="owl-item cloned" style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item cloned">
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <a href="#modal-asset" className="card__cover open-modal">
                                                 <img src="img/cover/cover7.jpg" alt=""/>
                                                 <span className="card__time">an hour left</span>
@@ -122,8 +122,8 @@ class Lastevents extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="owl-item" style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item">
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <Link to ="/item" className="card__cover">
                                                 <img src="img/cover/cover1.jpg" alt=""/>
                                                 <span className="card__time">15 minutes left</span>
@@ -153,8 +153,8 @@ class Lastevents extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="owl-item" style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item">
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <Link to ="/item" className="card__cover">
                                                 <img src="img/cover/cover2.jpg" alt=""/>
                                                 <span className="card__time card__time--clock">
@@ -188,8 +188,8 @@ class Lastevents extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="owl-item" style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item">
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <a href="#modal-asset" className="card__cover open-modal">
                                                 <img src="img/cover/cover3.jpg" alt=""/>
                                                 <span className="card__time">an hour left</span>
@@ -219,8 +219,8 @@ class Lastevents extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="owl-item" style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item">
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <Link to ="/item" className="card__cover">
                                                 <img src="img/cover/cover4.jpg" alt=""/>
                                                 <span className="card__time card__time--clock">
@@ -255,8 +255,8 @@ class Lastevents extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="owl-item" style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item">
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <Link to ="/item" className="card__cover">
                                                 <img src="img/cover/cover5.jpg" alt=""/>
                                                 <span className="card__time">15 minutes left</span>
@@ -285,8 +285,8 @@ class Lastevents extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="owl-item" style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item">
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <Link to ="/item" className="card__cover card__cover--video">
                                                 <img src="img/cover/cover6.jpg" alt=""/>
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -318,8 +318,8 @@ class Lastevents extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="owl-item active" style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item active" >
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <a href="#modal-asset" className="card__cover open-modal">
                                                 <img src="img/cover/cover7.jpg" alt=""/>
                                                 <span className="card__time">an hour left</span>
@@ -350,8 +350,8 @@ class Lastevents extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="owl-item cloned active" style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item cloned active">
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <Link to ="/item" className="card__cover">
                                                 <img src="img/cover/cover1.jpg" alt=""/>
                                                 <span className="card__time">15 minutes left</span>
@@ -383,9 +383,8 @@ class Lastevents extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="owl-item cloned active"
-                                         style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item cloned active">
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <Link to ="/item" className="card__cover">
                                                 <img src="img/cover/cover2.jpg" alt=""/>
                                                 <span className="card__time card__time--clock">
@@ -418,9 +417,8 @@ class Lastevents extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="owl-item cloned active"
-                                         style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item cloned active">
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <a href="#modal-asset" className="card__cover open-modal">
                                                 <img src="img/cover/cover3.jpg" alt=""/>
                                                 <span className="card__time">an hour left</span>
@@ -450,8 +448,8 @@ class Lastevents extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="owl-item cloned" style={{width: 302.5, marginRight: 30}}>
-                                        <div className="card">
+                                    <div className="owl-item cloned">
+                                        <div className="card" style={{height: 460, width: 260, marginLeft :20}}>
                                             <Link to ="/item" className="card__cover">
                                                 <img src="img/cover/cover4.jpg" alt=""/>
                                                 <span className="card__time card__time--clock">

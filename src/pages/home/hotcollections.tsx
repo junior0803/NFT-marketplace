@@ -14,15 +14,14 @@ function Hotcollections() {
                     <div className="main__carousel main__carousel--collections owl-carousel owl-loaded"
                          id="collections">
 
-
-                        <div className="owl-stage-outer owl-height" style={{height: 249}}>
+                        <div className="owl-stage-outer owl-height">
                             <div className="owl-stage"
                                  style={{transform: 'translate3d(-1330, 0, 0)', transition: "all 0s ease 0s", width: 4522}}>
-                                <div className="owl-item cloned" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item cloned">
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small3.png" style={{background: "img/bg/bg-small3.png"}}/>
                                         <div className="collection__meta">
-                                            <Link to="author.html"
+                                            <Link to="/author"
                                                className="collection__avatar collection__avatar--verified">
                                                 <img src="img/avatars/avatar12.jpg" alt="" />
                                             </Link>
@@ -33,8 +32,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item cloned" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item cloned" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small4.png" style={{background: "img/bg/bg-small4.png", backgroundRepeat: "no-repeat", backgroundPosition: "center"}} />
                                         <div className="collection__meta">
                                             <Link to="/author" className="collection__avatar">
@@ -47,8 +46,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item cloned" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item cloned" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small5.png" style={{background: "img/bg/bg-small5.png", backgroundRepeat: "no-repeat", backgroundPosition: "center"}} />
                                         <div className="collection__meta">
                                             <Link to="/author"
@@ -62,8 +61,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item cloned" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item cloned" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small6.png" style={{background: "img/bg/bg-small6.png", backgroundRepeat: "no-repeat", backgroundPosition: "center"}} />
                                         <div className="collection__meta">
                                             <Link to="/author" className="collection__avatar">
@@ -76,8 +75,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item cloned" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item cloned" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover"/>
                                         <div className="collection__meta">
                                             <Link to="/author" className="collection__avatar collection__avatar--verified">
@@ -90,8 +89,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item active" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item active" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small.png" style={{background: "img/bg/bg-small6.png", backgroundRepeat: "no-repeat", backgroundPosition: "center"}} />
                                         <div className="collection__meta">
                                             <Link to="/author" className="collection__avatar collection__avatar--verified">
@@ -104,8 +103,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item active" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item active" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small2.png" style={{background: "img/bg/bg-small2.png", backgroundRepeat: "no-repeat", backgroundPosition: "center"}} />
                                         <div className="collection__meta">
                                             <Link to="/author"
@@ -119,8 +118,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item active" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item active" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small3.png" style={{background: "img/bg/bg-small3.png", backgroundRepeat: "no-repeat", backgroundPosition: "center"}} />
                                         <div className="collection__meta">
                                             <Link to="/collection" className="collection__avatar collection__avatar--verified">
@@ -133,8 +132,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item active" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item active" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small4.png" style={{background: "img/bg/bg-small4.png", backgroundRepeat: "no-repeat", backgroundPosition: "center"}} />
                                         <div className="collection__meta">
                                             <Link to="/author" className="collection__avatar">
@@ -147,8 +146,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item active" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item active" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small5.png" style={{background: "img/bg/bg-small5.png", backgroundRepeat: "no-repeat", backgroundPosition: "center"}} />
                                         <div className="collection__meta">
                                             <Link to="/author" className="collection__avatar collection__avatar--verified">
@@ -161,8 +160,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small6.png" style={{background: "img/bg/bg-small6.png", backgroundRepeat: "no-repeat", backgroundPosition: "center"}} />
                                         <div className="collection__meta">
                                             <Link to="author" className="collection__avatar">
@@ -174,8 +173,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover"/>
                                         <div className="collection__meta">
                                             <Link to="/collection" className="collection__avatar collection__avatar--verified">
@@ -188,8 +187,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item cloned" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item cloned" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small.png" style={{background: "img/bg/bg-small6.png", backgroundRepeat: "no-repeat", backgroundPosition: "center"}} />
                                         <div className="collection__meta">
                                             <Link to="/author"
@@ -202,8 +201,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item cloned" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item cloned" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover"
                                            data-bg="img/bg/bg-small2.png"
                                            style={{background: "img/bg/bg-small2.png", backgroundRepeat: "no-repeat",backgroundPosition: "center"}}  />
@@ -218,8 +217,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item cloned" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item cloned" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small3.png" style={{background: "img/bg/bg-small3.png", backgroundRepeat: "no-repeat", backgroundPosition: "center"}} />
                                         <div className="collection__meta">
                                             <Link to="author" className="collection__avatar collection__avatar--verified">
@@ -232,8 +231,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item cloned" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item cloned" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small4.png" style={{background: "img/bg/bg-small4.png", backgroundRepeat: "no-repeat", backgroundPosition: "center"}} />
                                         <div className="collection__meta">
                                             <Link to="/author" className="collection__avatar">
@@ -246,8 +245,8 @@ function Hotcollections() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="owl-item cloned" style={{width: 236, marginRight: 30}}>
-                                    <div className="collection">
+                                <div className="owl-item cloned" >
+                                    <div className="collection" style={{width: 200, marginLeft: 20}}>
                                         <Link to="/collection" className="collection__cover" data-bg="img/bg/bg-small5.png" style={{background: "img/bg/bg-small5.png", backgroundRepeat: "no-repeat", backgroundPosition: "center"}} />
                                         <div className="collection__meta">
                                             <Link to="/author"

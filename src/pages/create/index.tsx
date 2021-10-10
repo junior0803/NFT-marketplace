@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 class Createpage extends React.Component {
     render() {
@@ -13,11 +14,11 @@ class Createpage extends React.Component {
                         <div className="col-12 col-xl-3">
                             <div className="author author--page">
                                 <div className="author__meta">
-                                    <a href="author.html" className="author__avatar author__avatar--verified">
+                                    <Link to="/author" className="author__avatar author__avatar--verified">
                                         <img src="img/avatars/avatar5.jpg" alt="" />
-                                    </a>
-                                    <h1 className="author__name"><a href="author.html">Lily Rose</a></h1>
-                                    <h2 className="author__nickname"><a href="author.html">@l1rose</a></h2>
+                                    </Link>
+                                    <h1 className="author__name"><Link to="/author">Lily Rose</Link></h1>
+                                    <h2 className="author__nickname"><Link to="/author">@l1rose</Link></h2>
                                     <p className="author__text">All the Lorem Ipsum generators on the Internet tend to
                                         repeat predefined chunks as necessary</p>
                                     <div className="author__code">

@@ -91,7 +91,7 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to = '/item'>To Infinity And Beyond</Link></h3>
-                                    <p className="activity__text">9 editions listed by <a href="author.html">@neo</a>
+                                    <p className="activity__text">9 editions listed by <Link to="/author">@neo</Link>
                                         <br />for <b>0.085 ETH</b> each</p>
                                     <span className="activity__time">21 minutes ago</span>
                                 </div>
@@ -105,9 +105,9 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to = '/item'>Flowers in Concrete</Link></h3>
-                                    <p className="activity__text">purchased by <a href="author.html">@johndoe</a>
-                                        <b>0x23d2dc92b...82c6</b> for <b>0.011 ETH</b> from <a
-                                            href="author.html">@min1max</a></p>
+                                    <p className="activity__text">purchased by <Link to="/author">@johndoe</Link>
+                                        <b>0x23d2dc92b...82c6</b> for <b>0.011 ETH</b> from
+                                        <Link to="/author">@min1max</Link></p>
                                     <span className="activity__time">21 minutes ago</span>
                                 </div>
                             </div>
@@ -120,8 +120,8 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to = '/item'>Industrial Revolution</Link></h3>
-                                    <p className="activity__text">transferred from <a href="author.html">@midinh</a>
-                                        <br />to <a href="author.html">@johndoe</a></p>
+                                    <p className="activity__text">transferred from <Link to="/author">@midinh</Link>
+                                        <br />to <Link to="/author">@johndoe</Link></p>
                                     <span className="activity__time">23 minutes ago</span>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to = '/item'>Tranquility</Link></h3>
-                                    <p className="activity__text"><a href="author.html">@aaarthur</a> offered <b>0.002
+                                    <p className="activity__text"><Link to="/author">@aaarthur</Link> offered <b>0.002
                                         WETH</b></p>
                                     <span className="activity__time">41 minutes ago</span>
                                 </div>
@@ -148,7 +148,7 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to ="/item">Tetradecapus</Link></h3>
-                                    <p className="activity__text">liked by <a href="author.html">@johndoe</a></p>
+                                    <p className="activity__text">liked by <Link to="/author">@johndoe</Link></p>
                                     <span className="activity__time">45 minutes ago</span>
                                 </div>
                             </div>
@@ -161,7 +161,7 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to ="/item">Elegance</Link></h3>
-                                    <p className="activity__text">started following <a href="author.html">@johndoe</a>
+                                    <p className="activity__text">started following <Link to="/author">@johndoe</Link>
                                     </p>
                                     <span className="activity__time">48 minutes ago</span>
                                 </div>
@@ -175,7 +175,7 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to ="/item">Walking on Air</Link></h3>
-                                    <p className="activity__text">started following <a href="author.html">@johndoe</a>
+                                    <p className="activity__text">started following <Link to="/author">@johndoe</Link>
                                     </p>
                                     <span className="activity__time">49 minutes ago</span>
                                 </div>
@@ -190,7 +190,7 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to ="/item">Walking on Air</Link></h3>
-                                    <p className="activity__text">listed by <a href="author.html">@Nickname</a>
+                                    <p className="activity__text">listed by <Link to="/author">@Nickname</Link>
                                         <br />for <b>0.049 ETH</b></p>
                                     <span className="activity__time">4 minutes ago</span>
                                 </div>
@@ -204,7 +204,7 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to ="/item">To Infinity And Beyond</Link></h3>
-                                    <p className="activity__text">9 editions listed by <a href="author.html">@neo</a>
+                                    <p className="activity__text">9 editions listed by <Link to="/author">@neo</Link>
                                         <br />for <b>0.085 ETH</b> each</p>
                                     <span className="activity__time">21 minutes ago</span>
                                 </div>
@@ -218,9 +218,9 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to ="/item">Flowers in Concrete</Link></h3>
-                                    <p className="activity__text">purchased by <a href="author.html">@johndoe</a>
-                                        <b>0x23d2dc92b...82c6</b> for <b>0.011 ETH</b> from <a
-                                            href="author.html">@min1max</a></p>
+                                    <p className="activity__text">purchased by <Link to="/author">@johndoe</Link>
+                                        <b>0x23d2dc92b...82c6</b> for <b>0.011 ETH</b> from
+                                        <Link to="/author">@min1max</Link></p>
                                     <span className="activity__time">21 minutes ago</span>
                                 </div>
                             </div>
@@ -233,8 +233,8 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to ="/item">Industrial Revolution</Link></h3>
-                                    <p className="activity__text">transferred from <a href="author.html">@midinh</a>
-                                        <br />to <a href="author.html">@johndoe</a></p>
+                                    <p className="activity__text">transferred from <Link to="/author">@midinh</Link>
+                                        <br />to <Link to="/author">@johndoe</Link></p>
                                     <span className="activity__time">23 minutes ago</span>
                                 </div>
                             </div>
@@ -247,7 +247,7 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to ="/item">Tranquility</Link></h3>
-                                    <p className="activity__text"><a href="author.html">@aaarthur</a> offered <b>0.002
+                                    <p className="activity__text"><Link to="/author">@aaarthur</Link> offered <b>0.002
                                         WETH</b></p>
                                     <span className="activity__time">41 minutes ago</span>
                                 </div>
@@ -261,7 +261,7 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to ="/item">Tetradecapus</Link></h3>
-                                    <p className="activity__text">liked by <a href="author.html">@johndoe</a></p>
+                                    <p className="activity__text">liked by <Link to="/author">@johndoe</Link></p>
                                     <span className="activity__time">45 minutes ago</span>
                                 </div>
                             </div>
@@ -274,7 +274,7 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to ="/item">Elegance</Link></h3>
-                                    <p className="activity__text">started following <a href="author.html">@johndoe</a>
+                                    <p className="activity__text">started following <Link to="/author">@johndoe</Link>
                                     </p>
                                     <span className="activity__time">48 minutes ago</span>
                                 </div>
@@ -288,7 +288,7 @@ function Activitypage() {
                                 </Link>
                                 <div className="activity__content">
                                     <h3 className="activity__title"><Link to ="/item">Walking on Air</Link></h3>
-                                    <p className="activity__text">started following <a href="author.html">@johndoe</a>
+                                    <p className="activity__text">started following <Link to="/author">@johndoe</Link>
                                     </p>
                                     <span className="activity__time">49 minutes ago</span>
                                 </div>

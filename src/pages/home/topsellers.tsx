@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 class Topsellers extends React.Component {
     render() {
@@ -14,13 +15,13 @@ class Topsellers extends React.Component {
                         </svg></a>
                     </div>
                 </div>
-                <div className="col-12">
+                <div className="col-12" style={{marginLeft:20}}>
                     <ul className="sellers-list">
                         <li>
                             <span className="sellers-list__number">1</span>
                             <div className="sellers-list__author sellers-list__author--verified">
                                 <img src="img/avatars/avatar.jpg" alt=""/>
-                                <a href="author.html">@miriuuu</a>
+                                <Link to="/author">@miriuuu</Link>
                                 <span>214.22 €</span>
                             </div>
                         </li>
@@ -29,7 +30,7 @@ class Topsellers extends React.Component {
                             <span className="sellers-list__number">2</span>
                             <div className="sellers-list__author sellers-list__author--verified">
                                 <img src="img/avatars/avatar2.jpg" alt=""/>
-                                <a href="author.html">@sc00ty</a>
+                                <Link to="/author">@sc00ty</Link>
                                 <span>205.8 €</span>
                             </div>
                         </li>
@@ -38,7 +39,7 @@ class Topsellers extends React.Component {
                             <span className="sellers-list__number">3</span>
                             <div className="sellers-list__author sellers-list__author--verified">
                                 <img src="img/avatars/avatar3.jpg" alt=""/>
-                                <a href="author.html">@redalert</a>
+                                <Link to="/author">@redalert</Link>
                                 <span>137.65 €</span>
                             </div>
                         </li>
@@ -47,7 +48,7 @@ class Topsellers extends React.Component {
                             <span className="sellers-list__number">4</span>
                             <div className="sellers-list__author sellers-list__author--verified">
                                 <img src="img/avatars/avatar4.jpg" alt=""/>
-                                <a href="author.html">@1one</a>
+                                <Link to="/author">@1one</Link>
                                 <span>129.301 €</span>
                             </div>
                         </li>
@@ -56,7 +57,7 @@ class Topsellers extends React.Component {
                             <span className="sellers-list__number">5</span>
                             <div className="sellers-list__author sellers-list__author--verified">
                                 <img src="img/avatars/avatar5.jpg" alt=""/>
-                                <a href="author.html">@kateblank</a>
+                                <Link to="/author">@kateblank</Link>
                                 <span>112.3 €</span>
                             </div>
                         </li>
@@ -65,7 +66,7 @@ class Topsellers extends React.Component {
                             <span className="sellers-list__number">6</span>
                             <div className="sellers-list__author sellers-list__author--verified">
                                 <img src="img/avatars/avatar6.jpg" alt=""/>
-                                <a href="author.html">@johndoe</a>
+                                <Link to="/author">@johndoe</Link>
                                 <span>108.88 €</span>
                             </div>
                         </li>
@@ -74,7 +75,7 @@ class Topsellers extends React.Component {
                             <span className="sellers-list__number">7</span>
                             <div className="sellers-list__author sellers-list__author--verified">
                                 <img src="img/avatars/avatar7.jpg" alt=""/>
-                                <a href="author.html">@nickname</a>
+                                <Link to="/author">@nickname</Link>
                                 <span>88.58 €</span>
                             </div>
                         </li>

@@ -14,9 +14,17 @@ import Createpage from "../pages/create";
 import itemPage from "../pages/item";
 import Home from "../pages/home";
 import RedirectPathToMarket from "../pages/Redirects";
-import React from "react";
+import React, {useEffect} from "react";
+import authorPage from "../pages/author";
+import {useLocation} from "react-router";
 
 function NfcRoutes () {
+
+    const location = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    },[location]);
+
     return(
         <div>
             <Switch>
@@ -33,6 +41,7 @@ function NfcRoutes () {
                 <Route path='/collection' component={Collectionpage} />
                 <Route path='/create' component={Createpage} />
                 <Route path='/item' component={itemPage} />
+                <Route path='/author' component={authorPage} />
                 <Route path="/">
                     <Home/>
                 </Route>

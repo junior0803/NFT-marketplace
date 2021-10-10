@@ -47,9 +47,8 @@ class Signinpage extends React.Component<Props>{
                     <div className="col-12">
                         <div className="sign">
                             <div className="sign__content">
-
                                 <form action="#" className="sign__form">
-                                    <Link to="/">
+                                    <Link to="/" className="sign__logo">
                                         <img src="img/logo.svg" alt=""/>
                                     </Link>
 

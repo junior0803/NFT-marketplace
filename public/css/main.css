@@ -41,10 +41,8 @@ Primary use:	Unitok HTML Template
 31. Select2
 32. Scrollbar-track
 ----------------------------------------*/
-/*==============================
-	Fonts
-==============================*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Inter:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Inter:wght@400;500&display=swap');
+
 /*==============================
 	Common styles
 ==============================*/
@@ -57,7 +55,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   background-color: #14142f;
   -webkit-font-smoothing: antialiased;
@@ -4994,6 +4992,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 20px;
   width: 100%;
 }
+
 .sign__group--row .sign__label {
   padding-left: 0;
 }
